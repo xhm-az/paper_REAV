@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "synthetic": true,
+  "grading_protocol": "normalized_exact_match_v1",
+  "question_ids": ["toy-item-a", "toy-item-b", "toy-item-c", "toy-item-d"],
+  "methods": ["system_a", "system_b"],
+  "run_pair_ids": ["toy-pair-a", "toy-pair-b"],
+  "clusters": [["toy-item-a", "toy-item-b"], ["toy-item-c"], ["toy-item-d"]],
+  "accepted_answers": {
+    "toy-item-a": ["blue cube", "azure cube"],
+    "toy-item-b": ["green sphere"],
+    "toy-item-c": ["red prism"],
+    "toy-item-d": ["yellow ring"]
+  },
+  "rows": [
+    {"question_id": "toy-item-a", "method": "system_a", "run_pair_id": "toy-pair-a", "answer": "BLUE CUBE."},
+    {"question_id": "toy-item-b", "method": "system_a", "run_pair_id": "toy-pair-a", "answer": "blue cone"},
+    {"question_id": "toy-item-c", "method": "system_a", "run_pair_id": "toy-pair-a", "answer": "Red prism"},
+    {"question_id": "toy-item-d", "method": "system_a", "run_pair_id": "toy-pair-a", "answer": "red cube"},
+    {"question_id": "toy-item-a", "method": "system_b", "run_pair_id": "toy-pair-a", "answer": "green cube"},
+    {"question_id": "toy-item-b", "method": "system_b", "run_pair_id": "toy-pair-a", "answer": " green   sphere "},
+    {"question_id": "toy-item-c", "method": "system_b", "run_pair_id": "toy-pair-a", "answer": "RED PRISM!"},
+    {"question_id": "toy-item-d", "method": "system_b", "run_pair_id": "toy-pair-a", "answer": "green cone"},
+    {"question_id": "toy-item-a", "method": "system_a", "run_pair_id": "toy-pair-b", "answer": "Azure cube"},
+    {"question_id": "toy-item-b", "method": "system_a", "run_pair_id": "toy-pair-b", "answer": "Green sphere."},
+    {"question_id": "toy-item-c", "method": "system_a", "run_pair_id": "toy-pair-b", "answer": "blue prism"},
+    {"question_id": "toy-item-d", "method": "system_a", "run_pair_id": "toy-pair-b", "answer": "blue ring"},
+    {"question_id": "toy-item-a", "method": "system_b", "run_pair_id": "toy-pair-b", "answer": "Blue cube"},
+    {"question_id": "toy-item-b", "method": "system_b", "run_pair_id": "toy-pair-b", "answer": "blue cone"},
+    {"question_id": "toy-item-c", "method": "system_b", "run_pair_id": "toy-pair-b", "answer": "yellow sphere"},
+    {"question_id": "toy-item-d", "method": "system_b", "run_pair_id": "toy-pair-b", "answer": "Yellow ring!"}
+  ]
+}

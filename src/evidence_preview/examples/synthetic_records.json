@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "synthetic": true,
+  "question_ids": ["toy-item-a", "toy-item-b", "toy-item-c", "toy-item-d"],
+  "methods": ["system_a", "system_b"],
+  "run_pair_ids": ["toy-pair-a", "toy-pair-b"],
+  "clusters": [["toy-item-a", "toy-item-b"], ["toy-item-c"], ["toy-item-d"]],
+  "rows": [
+    {"question_id": "toy-item-a", "method": "system_a", "run_pair_id": "toy-pair-a", "score": 1},
+    {"question_id": "toy-item-b", "method": "system_a", "run_pair_id": "toy-pair-a", "score": 0},
+    {"question_id": "toy-item-c", "method": "system_a", "run_pair_id": "toy-pair-a", "score": 1},
+    {"question_id": "toy-item-d", "method": "system_a", "run_pair_id": "toy-pair-a", "score": 0},
+    {"question_id": "toy-item-a", "method": "system_b", "run_pair_id": "toy-pair-a", "score": 0},
+    {"question_id": "toy-item-b", "method": "system_b", "run_pair_id": "toy-pair-a", "score": 1},
+    {"question_id": "toy-item-c", "method": "system_b", "run_pair_id": "toy-pair-a", "score": 1},
+    {"question_id": "toy-item-d", "method": "system_b", "run_pair_id": "toy-pair-a", "score": 0},
+    {"question_id": "toy-item-a", "method": "system_a", "run_pair_id": "toy-pair-b", "score": 1},
+    {"question_id": "toy-item-b", "method": "system_a", "run_pair_id": "toy-pair-b", "score": 1},
+    {"question_id": "toy-item-c", "method": "system_a", "run_pair_id": "toy-pair-b", "score": 0},
+    {"question_id": "toy-item-d", "method": "system_a", "run_pair_id": "toy-pair-b", "score": 0},
+    {"question_id": "toy-item-a", "method": "system_b", "run_pair_id": "toy-pair-b", "score": 1},
+    {"question_id": "toy-item-b", "method": "system_b", "run_pair_id": "toy-pair-b", "score": 0},
+    {"question_id": "toy-item-c", "method": "system_b", "run_pair_id": "toy-pair-b", "score": 0},
+    {"question_id": "toy-item-d", "method": "system_b", "run_pair_id": "toy-pair-b", "score": 1}
+  ]
+}
