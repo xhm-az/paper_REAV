@@ -1,6 +1,11 @@
 {
   "format_version": 1,
-  "scope": "partial offline scoring and evaluation code preview; synthetic fixtures only",
+  "scope": "selected core evidence-view projection and evaluation utilities; synthetic fixtures only",
+  "partial_core_components": [
+    "preassigned acquisition units",
+    "dependency-safe record-only projection"
+  ],
+  "full_core_learning_implementation_included": false,
   "real_experiment_outputs_included": false,
   "training_parameters_or_weights_included": false,
   "files": [
@@ -11,8 +16,8 @@
     },
     {
       "path": ".github/workflows/check.yml",
-      "sha256": "35e7e283d588409c4b9444c62effb6b7f2d267c7ee2119ef6371bab4c6c947e2",
-      "bytes": 470
+      "sha256": "e17602f788c1e6aa25e24dc4317da7104635c39ca55814d89c4dc7b7e59d5ef2",
+      "bytes": 510
     },
     {
       "path": ".gitignore",
@@ -21,18 +26,28 @@
     },
     {
       "path": "NOTICE.md",
-      "sha256": "0175a0b5d474c5a2e99ff15e0fd06fdbc90396d3fe347883cfa4fe9284d9dcb5",
-      "bytes": 955
+      "sha256": "e6c4cd689c91b94656bf17685cc6881905c89a4ec5c8f4d7551a3638813f6fc3",
+      "bytes": 975
     },
     {
       "path": "README.md",
-      "sha256": "c82187f09ba5d8036d5cbd1d3e26cd4efbdc22fa68e8ceafbe8895fcb12e8223",
-      "bytes": 5657
+      "sha256": "cab41fd010988116b06a70853a1f75d8abbfafece1f7957c74af331fa28b3b9f",
+      "bytes": 8585
     },
     {
       "path": "docs/answer-scoring.md",
-      "sha256": "cb2abd4646c3aae519cc8a628a0c21412408d0f7c7a2c6877a9e7c0a10990924",
-      "bytes": 2626
+      "sha256": "540bddaeb3e052f55dbe3102604e09c2ff6662a600dc7a234e748fb41f86620e",
+      "bytes": 3002
+    },
+    {
+      "path": "docs/core-design.md",
+      "sha256": "d5be341197643691bb2e1e4de78e5fe1628d43fcbc44e5fdd8f247a9a15d9c8b",
+      "bytes": 5700
+    },
+    {
+      "path": "docs/core-walkthrough.md",
+      "sha256": "4f9b2f8ad79bb41ab2da0275665a50e14af4e05be09fc83452df7cc3279ffef8",
+      "bytes": 5555
     },
     {
       "path": "docs/input-format.md",
@@ -40,14 +55,19 @@
       "bytes": 3965
     },
     {
+      "path": "docs/paper-code-tests.md",
+      "sha256": "bbaaf2803f5769df79077e7c44a27e84cd3fa6d3e0380c62c3e73e22aeab8c4a",
+      "bytes": 4399
+    },
+    {
       "path": "docs/reviewer-guide.md",
-      "sha256": "2d5f83664bfe5abb468a6979a58862e1450b99935d6dc49651099a9f420e6873",
-      "bytes": 3247
+      "sha256": "85a682340a5547bd3f1056c1ffe33292a2b552ce2911d9b1993440ccc355db7f",
+      "bytes": 4553
     },
     {
       "path": "pyproject.toml",
-      "sha256": "fd9e3e730ff2c1dbd360d9fa8b1a542bf2d3ce818a47b07dc14b4be393b2749d",
-      "bytes": 510
+      "sha256": "709b27a9a3e7c859cc4bc165558b2250760a5d3b587cb4a7d96f32356a3c41ed",
+      "bytes": 514
     },
     {
       "path": "src/evidence_preview/__init__.py",
@@ -66,13 +86,23 @@
     },
     {
       "path": "src/evidence_preview/cli.py",
-      "sha256": "905ac6c4ae039fce4d75292d837e5a61ab44540886d1ed1e8aeca0c275370d39",
-      "bytes": 4050
+      "sha256": "5278edb13d6ff496e24447401a4096ad2dcec188705abeede5962b95dc506ae5",
+      "bytes": 7954
+    },
+    {
+      "path": "src/evidence_preview/evidence_views.py",
+      "sha256": "289857a77f9fb77c471588209ca9be21a712ddf6ee843edf1f089afdce2492a5",
+      "bytes": 13559
     },
     {
       "path": "src/evidence_preview/examples/synthetic_answers.json",
       "sha256": "ee6b98e007c1f836d2c5c30d2e8ab7fad1df905e072bf5532424364a50c07fea",
       "bytes": 2301
+    },
+    {
+      "path": "src/evidence_preview/examples/synthetic_evidence.json",
+      "sha256": "f615003f0cbf41634588796eaf55125e471bec60d6f9acfe4bdc447f5caabf7f",
+      "bytes": 2800
     },
     {
       "path": "src/evidence_preview/examples/synthetic_records.json",
@@ -98,6 +128,11 @@
       "path": "src/evidence_preview/statistics.py",
       "sha256": "a32afb1ed1e5d8f70f67a86f4823c9ec4b7a21d23a499930c3fd2a7605b5edca",
       "bytes": 7498
+    },
+    {
+      "path": "tests/test_evidence_views.py",
+      "sha256": "669ce7803f1af56ebea7b5b2b7d9d552f7292dbc19224699469dd17eacf8c923",
+      "bytes": 13647
     },
     {
       "path": "tests/test_preview.py",

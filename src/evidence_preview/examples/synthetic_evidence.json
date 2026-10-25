@@ -1,0 +1,27 @@
+{
+  "format_version": 1,
+  "synthetic": true,
+  "question": "Which toy code applies to the toy-current release?",
+  "prefix_event": 10,
+  "calls": [
+    {"call_id": "toy-call-locate", "event_index": 1, "tool": "search", "arguments": {"query": "toy release records"}, "requires_records": [], "provenance_complete": true},
+    {"call_id": "toy-call-a1", "event_index": 3, "tool": "read", "arguments": {"handle": "toy-alpha"}, "requires_records": ["toy-record-locate"], "provenance_complete": true},
+    {"call_id": "toy-call-a2", "event_index": 5, "tool": "read", "arguments": {"handle": "toy-alpha-detail"}, "requires_records": ["toy-record-a1"], "provenance_complete": true},
+    {"call_id": "toy-call-b", "event_index": 7, "tool": "read", "arguments": {"handle": "toy-beta"}, "requires_records": ["toy-record-locate"], "provenance_complete": true},
+    {"call_id": "toy-call-check", "event_index": 9, "tool": "read", "arguments": {"handle": "toy-check"}, "requires_records": ["toy-record-locate"], "provenance_complete": true}
+  ],
+  "records": [
+    {"record_id": "toy-record-initial", "call_id": null, "event_index": 0, "text": "Artificial question context: use toy-current.", "source_id": "toy-source-initial", "independently_useful": true},
+    {"record_id": "toy-record-locate", "call_id": "toy-call-locate", "event_index": 2, "text": "Artificial handles: toy-alpha, toy-beta, toy-check.", "source_id": "toy-source-locate", "independently_useful": false},
+    {"record_id": "toy-record-a1", "call_id": "toy-call-a1", "event_index": 4, "text": "Artificial intermediate handle: toy-alpha-detail.", "source_id": "toy-source-a1", "independently_useful": false},
+    {"record_id": "toy-record-a2", "call_id": "toy-call-a2", "event_index": 6, "text": "Artificial content record A: code BLUE, release toy-current.", "source_id": "toy-source-a2", "independently_useful": true},
+    {"record_id": "toy-record-b", "call_id": "toy-call-b", "event_index": 8, "text": "Artificial content record B: code BLUE, release toy-current.", "source_id": "toy-source-b", "independently_useful": true},
+    {"record_id": "toy-record-check", "call_id": "toy-call-check", "event_index": 10, "text": "Artificial verification record: toy-alpha-detail and toy-beta refer to toy-current.", "source_id": "toy-source-check", "independently_useful": true}
+  ],
+  "units": [
+    {"unit_id": "toy-unit-locate", "call_ids": ["toy-call-locate"], "terminal_record_id": "toy-record-locate"},
+    {"unit_id": "toy-unit-content-a", "call_ids": ["toy-call-a1", "toy-call-a2"], "terminal_record_id": "toy-record-a2"},
+    {"unit_id": "toy-unit-content-b", "call_ids": ["toy-call-b"], "terminal_record_id": "toy-record-b"},
+    {"unit_id": "toy-unit-check", "call_ids": ["toy-call-check"], "terminal_record_id": "toy-record-check"}
+  ]
+}

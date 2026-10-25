@@ -1,6 +1,6 @@
 # Code preview notice
 
-This is a partial source-code preview. No MIT, Apache, or other open-source
+This is a partial core-implementation and utility preview. No MIT, Apache, or other open-source
 license is granted for this preview. Public visibility is not a claim that the
 complete research implementation is available under an open-source license.
 

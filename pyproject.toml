@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "evidence-evaluation-preview"
 version = "0.1.0"
-description = "Partial code preview: evaluation records, paired statistics, and reporting"
+description = "Partial core implementation: evidence-view projection and evaluation utilities"
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.26,<3"]
 readme = "README.md"

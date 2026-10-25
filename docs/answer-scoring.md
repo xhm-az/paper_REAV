@@ -5,6 +5,12 @@ It performs normalized exact match locally. It does not call a model, use an
 answer-extraction prompt, judge semantic equivalence, or certify official
 benchmark scores.
 
+The paper's external Web-QA evaluation uses a separate judging and
+answer-extraction procedure. The scorer in this preview is an offline example
+utility; its output must not be substituted for those formal grades or for a
+dataset-specific official scorer. Final externally obtained scores can be
+passed to the scored-record interface for validation and statistical analysis.
+
 ## Input
 
 The bundled `src/evidence_preview/examples/synthetic_answers.json` is an
